@@ -1,5 +1,5 @@
 import React from "react";
-import Csvdown from './Milestone'
+import Csvdownload from './Milestone'
 
 import CsvDownloader from 'react-csv-downloader';
 
@@ -7,7 +7,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import { useState,useEffect } from "react";
 import { CSVLink } from "react-csv";
 
-export default function MilestoneExport(){
+export default function Milestone(){
     const [datum,setdatum]=useState([])
     useEffect(()=>{
         fetch("https://fakestoreapi.com/products")
@@ -20,7 +20,7 @@ export default function MilestoneExport(){
 
 return(
     <div className="container-fluid row justify-content-around" style={{height:"100vh",width:"100vw"}}>
-        <Csvdown></Csvdown>
+        <Csvdownload></Csvdownload>
         <CSVLink
                 style={{
                     boxShadow:"inset 0px 1px 0px 0px #e184f3",
