@@ -3,7 +3,7 @@ import StarRatings from "react-star-ratings";
 
 
 
-export default function Csvdown(){
+export default function Csvdownload(){
     const [dat,setdat]=useState([])
     useEffect(()=>{
         fetch("https://fakestoreapi.com/products")
