@@ -1,0 +1,16 @@
+
+.cerImg{
+    height: 15rem;
+}
+.cerPageTitle{
+    font-size: 3rem;
+}
+.cerDesc{
+    font-weight: 300;
+    font-size: 1rem;  
+}
+.cerImg:hover{
+    transform: scale(1.2,1.2);
+    transition: 3s;
+    box-shadow: 10px 10px 5px orangered;
+}
